@@ -80,7 +80,7 @@ namespace matrica
             mas = Bubble(mas);
             ma[0] = mas[0];
             //result.Text += ma[0] + " " + Environment.NewLine;
-            for (int i = 1, j = 1; i < mas.Length; i++) //Получение массива "Множества чисел" с чем сравнивать
+            for (int i = 1, j = 1; i < mas.Length; i++)
             {
                 if (mas[i] == mas[i - 1]) continue;
                 ma[j] = mas[i];
@@ -95,7 +95,7 @@ namespace matrica
                 }
                     mas = Bubble(mas);
                     ma1[0] = mas[0];
-                    for (int z = 1, x = 1; z < mas.Length; z++) //Получение массива "Множества чисел" что сравнивать
+                    for (int z = 1, x = 1; z < mas.Length; z++)
                     {
                         if (mas[z] == mas[z - 1]) continue;
                         ma1[x] = mas[z];
@@ -107,7 +107,7 @@ namespace matrica
                         k++;
                     }
                 Array.Clear(mas, 0, mas.Length);
-                Array.Clear(ma1, 0, mas.Length);
+                Array.Clear(ma1, 0, ma1.Length);
             }
             result.Text += $"k=: {k}" + Environment.NewLine;
         }
